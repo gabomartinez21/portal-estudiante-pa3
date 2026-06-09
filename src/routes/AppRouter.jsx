@@ -9,7 +9,6 @@ export default function AppRouter() {
   return (
     <BrowserRouter>
       <Navbar />
-
       <main className="main-content">
         <div className="container">
           <Routes>
