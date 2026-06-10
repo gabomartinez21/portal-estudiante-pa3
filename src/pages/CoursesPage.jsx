@@ -3,26 +3,12 @@ import { useEnrollment } from '../hooks/useEnrollment';
 import CourseList from '../components/CourseList';
 import SearchBar from '../components/SearchBar';
 import './CoursesPage.css';
-
-const courses = [
-  {
-    id: 1,
-    title: "Desarrollo Web con React",
-    instructor: "Dr. Carlos Mendoza",
-    category: "Frontend",
-    credits: 4,
-    duration: "16 semanas",
-    description: "Aprende a construir aplicaciones modernas con React.",
-    enrolled: 18,
-    capacity: 30,
-    rating: 4.8,
-    level: "Intermedio"
-  }
-];
+import {courses} from '../data/courses'
 
 const CATEGORIES = ['Todos', 'Frontend', 'Backend', 'Base de Datos', 'Mobile', 'IA', 'DevOps', 'Seguridad', 'Data Science', 'Cloud', 'Soft Skills'];
 
 export default function CoursesPage() {
+  console.log({courses})
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('Todos');
   const { isEnrolled, addCourse, removeCourse } = useEnrollment();

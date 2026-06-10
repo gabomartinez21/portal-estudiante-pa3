@@ -4,21 +4,7 @@ import { useEnrollment } from '../hooks/useEnrollment';
 import CourseList from '../components/CourseList';
 import './HomePage.css';
 
-const courses = [
-  {
-    id: 1,
-    title: "Desarrollo Web con React",
-    instructor: "Dr. Carlos Mendoza",
-    category: "Frontend",
-    credits: 4,
-    duration: "16 semanas",
-    description: "Aprende a construir aplicaciones modernas con React.",
-    enrolled: 18,
-    capacity: 30,
-    rating: 4.8,
-    level: "Intermedio"
-  }
-];
+import {courses} from '../data/courses'
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
