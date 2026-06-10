@@ -80,6 +80,15 @@ portal-estudiante/
 - Persistencia en localStorage
 - Alertas de límite de créditos
 
+## Cambios realizados
+- Se agregaron CourseCard.css, CourseCard.jsx, CourseDetailPage.css, CourseDetailPage.jsx, /data/courses.js
+- Se agregó la ruta /cursos/:id en AppRouter
+- Se habilitó navegación a detalle de cursos
+- Se corrigió la redirección desde CourseCard
+
+### Resultados
+Ahora cada curso muestra su vista detallada correctamente.
+
 ## Decisiones técnicas
 
 ### Context API vs Redux
@@ -99,7 +108,7 @@ React Router DOM permite navegación entre páginas sin recarga del navegador, m
 | Nombre | Rol |
 |--------|-----|
 | [Nombre del integrante 1] | Desarrollador Frontend |
-| [Nombre del integrante 2] | Desarrollador Frontend |
+| Kenneth Lee Quinto Orihuela | Desarrollador Frontend |
 
 ## Video explicativo
 
